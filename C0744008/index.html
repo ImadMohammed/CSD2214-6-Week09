@@ -5,8 +5,24 @@
     <title>C0744008</title>
     <link href="css/default.css" rel="stylesheet" />
 </head>
-<body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+<body>  
+    <script>
+        
+        let addnumbers = {
+            starterno: 1109, stepdownno: 11, stopnumber: 119, sum : 0,
+            adder: function() {
+                
+                for (i = this.starterno; i >= this.stopnumber; i -= this.stepdownno) {
+                    this.sum += i;
+                }
+                return this.sum;
+            }
+                     
+        };
+        document.write("The sum is " + addnumbers.adder());
+        
+        
+        
+    </script>
 </body>
 </html>
